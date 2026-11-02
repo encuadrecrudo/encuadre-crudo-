@@ -1,1365 +1,1121 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta name="google-site-verification" content="DaidZ0A8NeU6nabqvVh5GxpN_F8DmOvaLtm3QlvJ14c" />
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#202629">
-<meta name="description" content="Encuadre Crudo: aprende los fundamentos de la fotografía, composición, iluminación y edición.">
-<title>Encuadre Crudo | Aprende a mirar</title>
-
+<meta name="description" content="Encuadre Crudo: aprende los fundamentos de la fotografía y desarrolla tu mirada.">
+<title>Encuadre Crudo | Aprende a mirar, aprende a capturar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --carbon: #202629;
-  --bone: #EAE7E1;
-  --rust: #A34B3F;
-  --steel: #454D50;
-  --dark: #171C1F;
+:root{--carbon:#202629;--bone:#EAE7E1;--rust:#A34B3F;--steel:#454D50;--dark:#171C1F;--muted:#B9BFBD;--line:rgba(234,231,225,.15)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:85px}body{background:var(--carbon);color:var(--bone);font:16px/1.7 Lato,sans-serif}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}h1,h2,h3,h4,.logo,.nav a,.nav summary{font-family:Oswald,sans-serif;text-transform:uppercase;line-height:1.2}h2{font-size:clamp(2rem,5vw,3.2rem);margin:.5rem 0 1rem}h3{font-size:1.35rem;margin-bottom:.6rem}p{color:#D3D5D1;margin:.45rem 0}.container{width:min(92%,1160px);margin:auto}.section{padding:82px 0}.eyebrow{color:#D18A7E;font-size:.76rem;font-weight:900;letter-spacing:.17em;text-transform:uppercase}.accent{color:#D18A7E}.rule{height:4px;width:70px;background:var(--rust);margin:20px 0}.btn{display:inline-block;border:1px solid var(--rust);background:var(--rust);color:white;padding:11px 19px;font-size:.82rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}.btn:hover{background:transparent}.btn.alt{background:transparent;border-color:var(--line)}.header{position:sticky;top:0;z-index:20;background:rgba(23,28,31,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.header-in{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:1.65rem;font-weight:700}.logo span{color:var(--rust)}.nav{display:flex;align-items:center;gap:18px}.nav a,.nav summary{font-size:.88rem;cursor:pointer;color:#E1E0DA}.nav a:hover,.nav summary:hover{color:#D18A7E}.nav details{position:relative}.nav summary{list-style:none}.nav summary::-webkit-details-marker{display:none}.nav summary:after{content:"⌄";color:#D18A7E;margin-left:5px}.drop{position:absolute;top:35px;left:0;min-width:220px;background:var(--dark);border:1px solid var(--line);padding:8px;display:grid;gap:3px}.drop a{padding:8px 10px}.drop a:hover{background:#30383B}.menu{display:none;background:none;color:white;border:1px solid var(--line);padding:7px 11px;font-size:1.2rem}.hero{min-height:610px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(15,20,22,.95),rgba(15,20,22,.55)),url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1800&q=85') center/cover}.hero-content{padding:90px 0;max-width:760px}.hero h1{font-size:clamp(3.2rem,9vw,6.8rem);margin:16px 0}.hero h1 span{color:#D18A7E}.hero p{font-size:1.1rem;max-width:610px;margin-bottom:25px}.actions{display:flex;gap:12px;flex-wrap:wrap}.head{max-width:760px;margin-bottom:30px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card,.panel,.challenge,.project-card{background:var(--dark);border:1px solid var(--line);padding:23px}.card .num{font:2rem Oswald;color:var(--rust);margin-bottom:8px}.card h3,.panel h3,.project-card h3{color:#E5B0A6}.topics,.alt-bg{background:#1B2225}.topic{display:block;background:#252D30;border-left:3px solid var(--rust);padding:19px}.topic:hover{background:#303A3E}.topic h3{margin:0 0 6px}.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.lesson{border-top:1px solid var(--line)}.lesson-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:22px}.fact{background:rgba(163,75,63,.12);border-left:3px solid var(--rust);padding:15px 18px;margin:20px 0}.visuals{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.visuals figure,.gallery figure{background:var(--dark);border:1px solid var(--line)}.visuals img{width:100%;height:170px;object-fit:cover}.visuals figcaption,.gallery figcaption{padding:10px;color:var(--muted);font-size:.86rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:20px}.step{background:#252D30;padding:19px;border:1px solid var(--line)}.step b{font:1.8rem Oswald;color:var(--rust)}details.accordion{background:var(--dark);border:1px solid var(--line);margin:12px 0}details.accordion summary{padding:16px 19px;cursor:pointer;list-style:none;font:1.1rem Oswald;text-transform:uppercase;display:flex;justify-content:space-between;gap:15px}details.accordion summary::-webkit-details-marker{display:none}details.accordion summary:after{content:"＋";color:#D18A7E}details.accordion[open] summary:after{content:"−"}.inside{padding:0 20px 18px}.clean{padding-left:20px;color:#D3D5D1}.table-wrap{overflow-x:auto;margin:18px 0}table{border-collapse:collapse;width:100%;min-width:520px;background:var(--dark)}td,th{border:1px solid var(--line);padding:11px 13px;text-align:left;color:#D3D5D1}th{font:1rem Oswald;text-transform:uppercase;color:#E5B0A6;background:#293236}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery img{width:100%;height:220px;object-fit:cover}.note{border:1px dashed rgba(209,138,126,.6);padding:16px;margin-top:18px;color:var(--muted)}.quizbox{max-width:780px;background:var(--dark);border:1px solid var(--line);padding:26px}.progress{height:6px;background:#3B4549;margin:17px 0 22px}.progress span{display:block;height:100%;background:var(--rust);width:0}.options{display:grid;gap:9px;margin:18px 0}.option{padding:12px 15px;background:#293236;color:var(--bone);border:1px solid var(--line);text-align:left;cursor:pointer}.option:disabled{opacity:.9}.option.good{border-color:#70A88A;background:#234034}.option.bad{border-color:#C8786D;background:#482C2A}#feedback{min-height:30px;color:#E5B0A6}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.banner{padding:30px;background:linear-gradient(120deg,rgba(163,75,63,.3),rgba(32,38,41,.65)),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1400&q=80') center/cover}.footer{padding:32px 0;background:var(--dark);border-top:1px solid var(--line)}.footer-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.muted{font-size:.88rem;color:var(--muted)}.toplink{color:#D18A7E;font-weight:900}
+@media(max-width:850px){.nav{gap:10px}.nav a,.nav summary{font-size:.78rem}.grid3,.topic-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.menu{display:block}.nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--dark);padding:18px 4%;border-bottom:1px solid var(--line);align-items:stretch;flex-direction:column;max-height:80vh;overflow:auto}.nav.open{display:flex}.nav a,.nav summary{font-size:1rem}.nav details{width:100%}.drop{position:static;margin-top:7px;box-shadow:none}.hero{min-height:540px}.lesson-grid,.grid2,.project-grid{grid-template-columns:1fr}.grid3,.topic-grid,.steps,.gallery{grid-template-columns:repeat(2,1fr)}.section{padding:65px 0}}
+@media(max-width:460px){.grid3,.topic-grid,.steps,.gallery,.visuals{grid-template-columns:1fr}.hero h1{font-size:3rem}.quizbox{padding:19px}}
+/* IDENTIDAD Y APORTE */
+.identity-section {
+    background: #202629;
+    padding: 90px 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+.identity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
 }
 
-body {
-  background: var(--carbon);
-  color: var(--bone);
-  font-family: 'Lato', sans-serif;
-  line-height: 1.7;
+.identity-card {
+    background: #30383B;
+    border: 1px solid #454D50;
+    padding: 35px;
+    position: relative;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.identity-card span {
+    color: #A34B3F;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.identity-card h3 {
+    color: #EAE7E1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 15px 0;
 }
 
-header {
-  min-height: 75px;
-  padding: 15px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--dark);
-  border-bottom: 1px solid var(--steel);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.identity-card p {
+    color: #C5C4BF;
+    line-height: 1.8;
 }
 
-.logo {
-  font-family: 'Oswald', sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 2px;
+.contribution-section {
+    padding: 90px 20px;
+    background: #202629;
+    color: #EAE7E1 ;
 }
 
-.logo span {
-  color: var(--rust);
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
 }
 
-nav {
-  display: flex;
-  gap: 22px;
+.contribution-item {
+    border-top: 3px solid #A34B3F;
+    padding: 22px 15px;
+    background: #30383B;
 }
 
-nav a {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: .3s;
+.contribution-item h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin-bottom: 12px;
 }
 
-nav a:hover {
-  color: var(--rust);
+.contribution-item p {
+    line-height: 1.7;
+    color: #C5C4BF;
 }
 
-.menu-btn {
-  display: none;
-  background: none;
-  color: var(--bone);
-  border: none;
-  font-size: 27px;
+.contribution-quote {
+    margin-top: 45px;
+    padding: 30px;
+    background: #202629;
+    color: #EAE7E1;
+    font-size: 20px;
+    line-height: 1.7;
+    border-left: 5px solid #A34B3F;
 }
 
-section {
-  padding: 85px 9%;
-  scroll-margin-top: 75px;
-}
-
-.tag {
-  color: var(--rust);
-  font-weight: 900;
-  font-size: 12px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-.section-title {
-  font-size: clamp(32px, 5vw, 48px);
-  margin: 12px 0 22px;
-}
-
-.section-text {
-  max-width: 800px;
-  color: #C4C8C5;
-  margin-bottom: 25px;
-}
-
-.btn {
-  display: inline-block;
-  background: var(--rust);
-  color: white;
-  padding: 13px 25px;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: .3s;
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: var(--bone);
-  color: var(--carbon);
-  transform: translateY(-3px);
-}
-
-/* PORTADA */
-
-.hero {
-  min-height: 580px;
-  padding: 100px 9%;
-  display: flex;
-  align-items: center;
-  background:
-    linear-gradient(90deg, rgba(23,28,31,.96), rgba(23,28,31,.58)),
-    url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1600')
-    center/cover;
-}
-
-.hero-content {
-  max-width: 780px;
-}
-
-.hero h1 {
-  font-size: clamp(48px, 8vw, 88px);
-  margin: 22px 0;
-}
-
-.hero h1 span {
-  color: var(--rust);
-}
-
-.hero p {
-  max-width: 580px;
-  color: #D1D0CA;
-  margin-bottom: 30px;
-  font-size: 17px;
-}
-
-/* INTRODUCCIÓN */
-
-.intro {
-  background: var(--bone);
-  color: var(--carbon);
-}
-
-.intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.intro .section-text {
-  color: var(--steel);
-}
-
-.intro-image {
-  width: 100%;
-  height: 330px;
-  object-fit: cover;
-  filter: grayscale(100%);
-}
-
-/* TARJETAS */
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.card {
-  padding: 26px;
-  background: var(--dark);
-  border-top: 4px solid var(--rust);
-  transition: .3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  font-size: 23px;
-  margin-bottom: 12px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #C4C8C5;
-}
-
-.number {
-  color: var(--rust);
-  font-family: 'Oswald', sans-serif;
-  font-size: 32px;
-}
-
-/* TEMAS */
-
-.topics {
-  background: var(--dark);
-}
-
-.topic-card {
-  min-height: 180px;
-  padding: 24px;
-  background: var(--carbon);
-  border: 1px solid var(--steel);
-  transition: .3s;
-}
-
-.topic-card:hover {
-  border-color: var(--rust);
-  transform: translateY(-5px);
-}
-
-.topic-card h3 {
-  font-size: 22px;
-  margin: 12px 0;
-}
-
-.topic-card p {
-  color: #C4C8C5;
-  font-size: 14px;
-}
-
-.topic-card a {
-  display: inline-block;
-  color: var(--rust);
-  margin-top: 15px;
-  font-weight: 900;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
-
-/* CONTENIDO EDUCATIVO */
-
-.lesson {
-  border-bottom: 1px solid var(--steel);
-}
-
-.lesson:nth-child(even) {
-  background: var(--dark);
-}
-
-.lesson-grid {
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 35px;
-  align-items: center;
-}
+@media (max-width: 700px) {
+    .identity-grid {
+        grid-template-columns: 1fr;
+    }
 
-.lesson-image {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  filter: saturate(.7);
+    .contribution-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.lesson h3 {
-  font-size: 25px;
-  margin: 22px 0 10px;
+@media (max-width: 430px) {
+    .contribution-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.lesson p {
-  color: #C4C8C5;
-  margin-bottom: 14px;
-}
-
-.lesson ul {
-  padding-left: 22px;
-  color: #C4C8C5;
-}
-
-.lesson li {
-  margin: 8px 0;
-}
-
-.fact {
-  padding: 18px;
-  margin-top: 20px;
-  background: #30393D;
-  border-left: 4px solid var(--rust);
-  color: var(--bone);
-}
-
-.lesson-image-box {
-  background: var(--dark);
-  padding: 8px;
-}
-
-/* COMPARACIONES */
-
-.comparison {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin-top: 25px;
-}
-
-.comparison div {
-  background: var(--dark);
-  padding: 20px;
-}
-
-.comparison strong {
-  color: var(--rust);
-  display: block;
-  margin-bottom: 8px;
-}
-
-/* RETOS */
-
-.challenges {
-  background: var(--bone);
-  color: var(--carbon);
-}
-
-.challenges .section-text {
-  color: var(--steel);
-}
-
-.challenge-card {
-  background: #D9D6D0;
-  border-top: 4px solid var(--rust);
-  padding: 25px;
-}
-
-.challenge-card p {
-  color: var(--steel);
-  font-size: 14px;
-}
-
-.challenge-card h3 {
-  margin: 10px 0;
-}
-
-.challenge-card button {
-  margin-top: 15px;
-}
-
-.challenge-card .fact {
-  color: var(--bone);
-}
-
-/* GALERÍA */
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  filter: grayscale(45%);
-  transition: .3s;
-}
-
-.gallery-grid img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.02);
-}
-
-/* CUESTIONARIO */
-
-.quiz {
-  background: var(--dark);
-}
-
-.quiz-box {
-  max-width: 750px;
-  padding: 30px;
-  background: var(--carbon);
-  border: 1px solid var(--steel);
-}
-
-.quiz-box h3 {
-  font-size: 23px;
-  margin-bottom: 20px;
-}
-
-.quiz-option {
-  display: block;
-  width: 100%;
-  padding: 13px;
-  margin: 10px 0;
-  background: var(--steel);
-  color: var(--bone);
-  border: 1px solid transparent;
-  text-align: left;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-}
-
-.quiz-option:hover {
-  border-color: var(--rust);
-}
+/* HISTORIA DE LA FOTOGRAFÍA */
 
-#quiz-result {
-  margin-top: 18px;
-  color: var(--bone);
-  font-weight: bold;
+.history-section {
+    background: #202629;
+    color: #EAE7E1;
+    padding: 90px 20px;
 }
 
-/* PROYECTO */
-
-.project {
-  background: var(--bone);
-  color: var(--carbon);
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
-
-.project-card {
-  padding: 24px;
-  border-left: 4px solid var(--rust);
-  background: #D9D6D0;
-}
-
-.project-card h3 {
-  margin-bottom: 12px;
-}
-
-.project-card p {
-  color: var(--steel);
-}
-
-/* INSTITUCIÓN */
-
-.institution {
-  background: var(--rust);
-  color: white;
+.history-intro {
+    max-width: 750px;
+    color: #C5C4BF;
+    line-height: 1.8;
+    margin-top: 15px;
 }
 
-.institution .tag {
-  color: var(--bone);
+.history-timeline {
+    max-width: 850px;
+    margin: 55px auto 0;
+    position: relative;
 }
 
-.institution p {
-  max-width: 850px;
+.history-item {
+    position: relative;
+    padding: 0 0 45px 40px;
+    margin-left: 15px;
+    border-left: 2px solid #A34B3F;
 }
 
-/* PIE */
-
-footer {
-  padding: 35px 8%;
-  text-align: center;
-  background: #111619;
-  color: #AEB3B2;
-  font-size: 13px;
-}
-
-footer strong {
-  color: var(--rust);
-  font-family: 'Oswald', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
+.history-item:last-child {
+    border-left: 2px solid transparent;
+    padding-bottom: 0;
 }
-
-@media(max-width: 800px) {
-  header {
-    padding: 15px 6%;
-  }
-
-  .menu-btn {
-    display: block;
-  }
 
-  nav {
-    display: none;
+.history-item::before {
+    content: "";
     position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: var(--dark);
-    padding: 25px;
-    flex-direction: column;
-    border-bottom: 2px solid var(--rust);
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  section {
-    padding: 65px 7%;
-  }
-
-  .hero {
-    min-height: 520px;
-    padding: 75px 7%;
-  }
-
-  .intro-grid,
-  .card-grid,
-  .lesson-grid,
-  .comparison,
-  .gallery-grid,
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-grid img {
-    height: 250px;
-  }
-
-  .section-title {
-    font-size: 35px;
-  }
+    width: 13px;
+    height: 13px;
+    background: #A34B3F;
+    border: 3px solid #202629;
+    border-radius: 50%;
+    left: -9px;
+    top: 4px;
 }
+
+.history-year {
+    color: #C47B68;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.history-card {
+    background: #30383B;
+    border: 1px solid #454D50;
+    padding: 25px;
+    margin-top: 12px;
+}
+
+.history-card h3 {
+    color: #EAE7E1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.history-card p {
+    color: #C5C4BF;
+    line-height: 1.8;
+}
+
+.history-image {
+    width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+    background: #202629;
+    margin: 15px 0 20px;
+    border: 1px solid #454D50;
+    display: block;
+    border-radius: 4px;
+}
+
+.history-highlight {
+    color: #D18B77;
+    font-weight: bold;
+}
+
+.history-conclusion {
+    margin-top: 55px;
+    padding: 30px;
+    border-left: 4px solid #A34B3F;
+    background: #30383B;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .history-item {
+        padding-left: 25px;
+    }
+
+    .history-card {
+        padding: 20px;
+    }
+
+    .history-year {
+        font-size: 22px;
+    }
+}
+
+
+.genres-section {
+    background: #202629;
+    color: #EAE7E1;
+    padding: 90px 20px;
+}
+
+.genres-intro {
+    max-width: 750px;
+    color: #C5C4BF;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.genres-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.genre-card {
+    background: #30383B;
+    border: 1px solid #454D50;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    border-color: #A34B3F;
+}
+
+.genre-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    background: #202629;
+}
+
+.genre-content {
+    padding: 25px;
+}
+
+.genre-number {
+    color: #C47B68;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.genre-content h3 {
+    color: #EAE7E1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    margin: 10px 0 15px;
+}
+
+.genre-content p {
+    color: #C5C4BF;
+    line-height: 1.8;
+}
+
+.genre-purpose {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #454D50;
+}
+
+.genre-purpose strong {
+    color: #D18B77;
+}
+
+.genres-conclusion {
+    margin-top: 55px;
+    padding: 30px;
+    background: #30383B;
+    border-left: 4px solid #A34B3F;
+}
+
+.genres-conclusion h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 12px;
+}
+
+.genres-conclusion p {
+    color: #C5C4BF;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    .genres-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .genre-card img {
+        height: 230px;
+    }
+
+    .genre-content {
+        padding: 20px;
+    }
+}
+
+
+.genre-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    background: #202629;
+    border-bottom: 2px solid #A34B3F;
+    transition: transform 0.4s ease;
+}
+
+.genre-card:hover img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 700px) {
+    .genre-card img {
+        height: 230px;
+    }
+}
+
+.participation-section {
+    background: #202629;
+    color: #EAE7E1;
+    padding: 90px 20px;
+}
+
+.participation-intro {
+    max-width: 750px;
+    color: #C5C4BF;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.participation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.participation-card {
+    background: #30383B;
+    border: 1px solid #454D50;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.participation-card:hover {
+    transform: translateY(-5px);
+    border-color: #A34B3F;
+}
+
+.participation-number {
+    color: #C47B68;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.participation-card h3 {
+    color: #EAE7E1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.participation-card p {
+    color: #C5C4BF;
+    line-height: 1.8;
+}
+
+.participation-message {
+    margin-top: 50px;
+    padding: 30px;
+    background: #30383B;
+    border-left: 4px solid #A34B3F;
+}
+
+.participation-message h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 12px;
+}
+
+.participation-message p {
+    color: #C5C4BF;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    .participation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .participation-card {
+        padding: 25px;
+    }
+}
+
+.participation-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.participation-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 17px 28px;
+    background: #A34B3F;
+    color: #EAE7E1;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+
+.participation-button:hover {
+    background: #80382F;
+    transform: translateY(-3px);
+}
+
+.button-arrow {
+    font-size: 22px;
+}
+
+.participation-button-container p {
+    color: #C5C4BF;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
 </style>
 </head>
-
 <body>
-
-<header>
-  <a href="#inicio" class="logo">EC<span>.</span></a>
-
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
-
-  <nav id="menu">
-    <a href="#inicio" onclick="closeMenu()">Inicio</a>
-    <a href="#fundamentos" onclick="closeMenu()">Fundamentos</a>
-    <a href="#composicion" onclick="closeMenu()">Composición</a>
-    <a href="#iluminacion" onclick="closeMenu()">Iluminación</a>
-    <a href="#tecnicas" onclick="closeMenu()">Técnicas</a>
-    <a href="#edicion" onclick="closeMenu()">Edición</a>
-    <a href="#practicar" onclick="closeMenu()">Practicar</a>
-    <a href="#galeria" onclick="closeMenu()">Galería</a>
-  </nav>
-</header>
+<header class="header"><div class="container header-in">
+<a class="logo" href="#inicio">EC<span>.</span></a>
+<button class="menu" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+<nav class="nav" id="nav">
+<a href="#inicio">Inicio</a>
+<details><summary>Aprender</summary><div class="drop">
+<a href="#introduccion">Introducción</a><a href="#importancia">Importancia</a><a href="#fundamentos">Fundamentos</a><a href="#planos">Planos y encuadres</a><a href="#composicion">Composición</a><a href="#iluminacion">Iluminación</a><a href="#objetivos">Objetivos y lentes</a><a href="#controles">Controles de cámara</a><a href="#tecnicas">Técnicas</a><a href="#formatos">Formatos y edición</a><a href="#proceso">Proceso creativo</a><a href="#identidad">Identidad</a>
+<a href="#aporte">Nuestro aporte</a>
+</div></details>
+<details><summary>Practicar</summary><div class="drop"><a href="#practicar">Desafíos</a><a href="#quiz">Cuestionario</a></div></details>
+<a href="#historia">Historia</a>
+<a href="#generos">Géneros</a>
+<a href="#galeria">Galería</a>
+<a href="#participacion">Participación</a>
+<a href="#proyecto">Proyecto</a>
+</nav></div></header>
 
 <main>
+<section class="hero" id="inicio"><div class="container hero-content">
+<span class="eyebrow">Una guía para descubrir la fotografía</span>
+<h1>APRENDE A MIRAR.<br><span>APRENDE A CAPTURAR.</span></h1>
+<p>La fotografía es técnica, observación y creatividad. Descubre cómo controlar tu cámara y transformar lo cotidiano en imágenes con intención.</p>
+<div class="actions"><a class="btn" href="#fundamentos">Comenzar a aprender</a><a class="btn alt" href="#galeria">Explorar galería</a></div>
+</div></section>
 
-<!-- INICIO -->
+<section class="section" id="introduccion"><div class="container grid2">
+<div><span class="eyebrow">01 · Punto de partida</span><h2>¿QUÉ ES <span class="accent">ENCUADRE CRUDO</span>?</h2><div class="rule"></div>
+<p>Encuadre Crudo es un proyecto educativo digital que reúne conocimientos esenciales de fotografía en un espacio accesible y visual. Su propósito es ayudar a comprender cómo funciona la cámara, cómo observar la luz y cómo tomar decisiones para construir fotografías con significado.</p>
+<p>No se trata solamente de presionar un botón: fotografiar también implica observar, elegir un punto de vista, organizar los elementos y comunicar una idea.</p></div>
+<img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1000&q=85" alt="Cámara fotográfica" style="width:100%;height:330px;object-fit:cover"></div></section>
 
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <span class="tag">Fotografía · Creatividad · Aprendizaje</span>
+<section class="section alt-bg" id="importancia"><div class="container"><div class="head"><span class="eyebrow">02 · Más que una imagen</span><h2>LA IMPORTANCIA DE LA FOTOGRAFÍA</h2><p>Una fotografía puede informar, conservar recuerdos, expresar emociones y mostrar detalles que a veces pasan desapercibidos.</p></div>
+<div class="grid3"><article class="card"><div class="num">01</div><h3>Expresión</h3><p>Permite comunicar ideas, emociones y puntos de vista sin depender únicamente de las palabras.</p></article><article class="card"><div class="num">02</div><h3>Observación</h3><p>Entrena la atención hacia la luz, las formas, los colores, las texturas y los momentos.</p></article><article class="card"><div class="num">03</div><h3>Memoria</h3><p>Conserva acontecimientos y experiencias que pueden ser recordados y compartidos.</p></article></div></div></section>
 
-    <h1>APRENDE A MIRAR.<br><span>APRENDE A CAPTURAR.</span></h1>
+<section class="section topics"><div class="container"><div class="head"><span class="eyebrow">Contenido del sitio</span><h2>EXPLORA LOS CONTENIDOS</h2><p>Avanza por los temas según tu ritmo. Abre los apartados desplegables para profundizar.</p></div>
+<div class="topic-grid">
+<a class="topic" href="#fundamentos"><h3>Fundamentos</h3><p>Exposición, ISO, apertura y velocidad.</p></a><a class="topic" href="#planos"><h3>Planos y encuadres</h3><p>Distancias y tamaños del sujeto.</p></a><a class="topic" href="#composicion"><h3>Composición</h3><p>Orden visual, perspectiva y profundidad.</p></a><a class="topic" href="#iluminacion"><h3>Iluminación</h3><p>Dirección, calidad y tipos de luz.</p></a><a class="topic" href="#objetivos"><h3>Objetivos y lentes</h3><p>Distancias focales y usos frecuentes.</p></a><a class="topic" href="#controles"><h3>Controles de cámara</h3><p>Enfoque, bloqueo y botones.</p></a><a class="topic" href="#tecnicas"><h3>Técnicas</h3><p>Movimiento, enfoque y fondo desenfocado.</p></a><a class="topic" href="#formatos"><h3>Formatos y edición</h3><p>RAW, JPEG y ajustes digitales.</p></a><a class="topic" href="#proceso"><h3>Proceso creativo</h3><p>Mirar, planificar, fotografiar y seleccionar.</p></a>
+</div></div></section>
 
-    <p>
-      Descubre el mundo de la fotografía desde una perspectiva
-      diferente. Aprende a observar, experimentar y transformar
-      momentos cotidianos en imágenes con significado.
-    </p>
+<section class="section lesson" id="fundamentos"><div class="container"><div class="head"><span class="eyebrow">03 · Control de la exposición</span><h2>FUNDAMENTOS FOTOGRÁFICOS</h2><p>La exposición es la cantidad de luz que registra la cámara. Se controla principalmente mediante tres ajustes que trabajan en conjunto: apertura, velocidad de obturación e ISO.</p></div>
+<div class="lesson-grid">
+<article class="panel"><h3>Apertura del diafragma</h3><p>Es el tamaño de la abertura del objetivo por donde entra la luz. Se expresa con números f. Un número f pequeño representa una abertura amplia; un número f grande, una abertura pequeña.</p><p>También influye en la profundidad de campo: con una abertura amplia suele ser más fácil conseguir un fondo desenfocado.</p></article>
+<article class="panel"><h3>Velocidad de obturación</h3><p>Indica cuánto tiempo permanece abierto el obturador. Una velocidad rápida puede congelar movimientos; una lenta puede registrar el movimiento como una estela o desenfoque.</p></article>
+<article class="panel"><h3>ISO</h3><p>El ISO determina el nivel de amplificación de la señal capturada y afecta la luminosidad final. Un ISO bajo suele ofrecer una imagen más limpia; al aumentarlo puede aparecer más ruido digital.</p><p>No existe un ISO correcto para cada clima: se ajusta según la luz disponible y los otros controles.</p></article>
+<article class="panel"><h3>Triángulo de exposición</h3><p>Apertura, velocidad e ISO están relacionados. Si modificas uno, puedes necesitar cambiar otro para mantener una exposición similar. La elección también afecta el movimiento, la profundidad de campo y el ruido.</p></article></div>
+<div class="fact"><strong>Idea clave:</strong> no existe una combinación única para todas las fotografías. La mejor configuración depende del resultado que quieras conseguir.</div>
+<details class="accordion"><summary>Ejemplos orientativos de ISO</summary><div class="inside"><p>Son puntos de partida, no reglas fijas. La cámara, el objetivo, la hora y el resultado buscado pueden cambiar la elección.</p><div class="table-wrap"><table><tr><th>Situación</th><th>ISO de referencia</th></tr><tr><td>Exterior con sol intenso</td><td>100–200</td></tr><tr><td>Nublado o sombra</td><td>200–400</td></tr><tr><td>Interior bien iluminado</td><td>400–800</td></tr><tr><td>Interior con poca luz</td><td>800–1600 o más</td></tr></table></div><p>Si necesitas congelar movimiento, quizá debas priorizar una velocidad rápida aunque tengas que subir el ISO.</p></div></details>
+<details class="accordion"><summary>Escala de aperturas y profundidad de campo</summary><div class="inside"><p>Como referencia: f/1.4, f/2, f/2.8, f/4, f/5.6, f/8, f/11, f/16 y f/22. Los números pequeños corresponden a aberturas amplias; los grandes, a aberturas estrechas.</p><div class="grid2"><div class="panel"><h3>f/2.8</h3><p>Abertura amplia: entra más luz y suele producir menor profundidad de campo.</p></div><div class="panel"><h3>f/16</h3><p>Abertura estrecha: entra menos luz y suele aumentar la zona enfocada.</p></div></div><p>La profundidad de campo también depende de la distancia al sujeto, la distancia focal y el tamaño del sensor.</p></div></details>
+</div></section>
+<section class="section lesson" id="planos"><div class="container"><div class="head"><span class="eyebrow">04 · Qué parte mostramos</span><h2>PLANOS Y ENCUADRES</h2><p>El plano determina cuánto espacio ocupa el sujeto dentro de la imagen. Elegirlo cambia la información que recibe quien observa la fotografía.</p></div>
+<div class="visuals"><figure><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Retrato cercano"><figcaption>Primer plano: destaca el rostro y la expresión.</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Retrato de persona"><figcaption>Plano medio: combina sujeto y entorno.</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Paisaje amplio"><figcaption>Plano general: muestra el entorno.</figcaption></figure></div>
+<div class="lesson-grid"><div class="panel"><h3>Planos cercanos</h3><ul class="clean"><li><strong>Detalle:</strong> resalta una parte pequeña u objeto específico.</li><li><strong>Primerísimo primer plano:</strong> encuadra una zona muy concreta del rostro o sujeto.</li><li><strong>Primer plano:</strong> destaca el rostro y su expresión.</li><li><strong>Plano medio corto:</strong> suele encuadrar desde el pecho o los hombros.</li></ul></div><div class="panel"><h3>Planos abiertos</h3><ul class="clean"><li><strong>Plano medio:</strong> muestra aproximadamente desde la cintura.</li><li><strong>Plano medio largo:</strong> incluye más parte del cuerpo, aproximadamente hasta los muslos.</li><li><strong>Plano americano:</strong> suele cortar alrededor de las rodillas o mitad del muslo.</li><li><strong>Plano entero:</strong> muestra el cuerpo completo.</li><li><strong>Plano general y gran general:</strong> dan mayor protagonismo al entorno.</li></ul></div></div><div class="fact">Los límites y nombres de algunos planos pueden variar según la escuela o tradición audiovisual. Lo importante es comprender qué información aporta cada encuadre.</div></div></section>
 
-    <a href="#introduccion" class="btn">Explorar proyecto</a>
-  </div>
+<section class="section lesson" id="composicion"><div class="container"><div class="head"><span class="eyebrow">05 · Organizar la imagen</span><h2>COMPOSICIÓN Y PROFUNDIDAD</h2><p>Componer es decidir dónde colocar cada elemento dentro del encuadre para dirigir la atención y construir una lectura visual.</p></div>
+<div class="lesson-grid"><article class="panel"><h3>Regla de los tercios</h3><p>Imagina dos líneas horizontales y dos verticales que dividen la imagen en nueve partes. Colocar el sujeto cerca de esas líneas o sus intersecciones puede crear equilibrio y dinamismo.</p></article><article class="panel"><h3>Simetría y equilibrio</h3><p>La simetría organiza elementos semejantes a ambos lados de un eje. El equilibrio también puede lograrse con elementos diferentes que compensan su peso visual.</p></article><article class="panel"><h3>Líneas y perspectiva</h3><p>Las líneas de caminos, edificios o sombras pueden guiar la mirada. Cambiar la posición de la cámara modifica la perspectiva y la relación entre objetos.</p></article><article class="panel"><h3>Encuadre dentro del encuadre</h3><p>Puertas, ventanas, ramas u otros elementos pueden rodear al sujeto y ayudar a dirigir la atención hacia él.</p></article></div>
+<h3 style="margin-top:30px">Los tres planos de profundidad</h3><div class="steps"><div class="step"><b>01</b><h3>Primer plano</h3><p>Elementos cercanos a la cámara que aportan contexto o profundidad.</p></div><div class="step"><b>02</b><h3>Plano medio</h3><p>Zona intermedia donde puede ubicarse el sujeto principal.</p></div><div class="step"><b>03</b><h3>Fondo</h3><p>Espacio posterior que completa la escena y puede reforzar o distraer.</p></div></div>
+<details class="accordion"><summary>Cómo desarrollar el ojo fotográfico</summary><div class="inside"><p>Antes de fotografiar, observa qué elementos llaman tu atención. Busca líneas, formas, sombras, reflejos, colores y gestos. Muévete alrededor de la escena, prueba otros puntos de vista y elimina del encuadre aquello que distraiga de tu intención.</p></div></details></div></section>
+
+<section class="section lesson" id="iluminacion"><div class="container"><div class="head"><span class="eyebrow">06 · La materia prima</span><h2>ILUMINACIÓN FOTOGRÁFICA</h2><p>La luz revela formas, crea volumen, define colores y establece el ambiente de una fotografía. Aprender a reconocerla es tan importante como conocer la cámara.</p></div>
+<div class="lesson-grid"><div class="panel"><h3>Luz natural</h3><p>Proviene del sol y cambia según la hora, el clima y la ubicación. Puede ser directa, suave, intensa o filtrada por nubes y superficies.</p></div><div class="panel"><h3>Luz artificial</h3><p>Se produce con lámparas, flashes, paneles LED y otras fuentes. Permite controlar mejor la dirección, intensidad y color.</p></div><div class="panel"><h3>Luz suave y dura</h3><p>La luz suave produce transiciones graduales y sombras menos marcadas. La luz dura crea sombras definidas y contrastes más fuertes.</p></div><div class="panel"><h3>Dirección de la luz</h3><p>La posición de la fuente respecto al sujeto cambia el volumen, las sombras y el efecto visual.</p></div></div>
+<div class="visuals"><figure><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=700&q=80" alt="Luz natural"><figcaption>Frontal: ilumina desde la dirección de la cámara.</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80" alt="Luz lateral"><figcaption>Lateral: resalta texturas y crea volumen.</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80" alt="Contraluz"><figcaption>Contraluz: la fuente está detrás del sujeto.</figcaption></figure></div>
+<details class="accordion"><summary>Direcciones de iluminación</summary><div class="inside"><ul class="clean"><li><strong>Frontal:</strong> la luz llega desde una posición cercana a la cámara.</li><li><strong>Lateral:</strong> llega desde un costado y puede marcar texturas.</li><li><strong>Cenital:</strong> proviene desde arriba.</li><li><strong>Nadir:</strong> proviene desde abajo.</li><li><strong>Contraluz:</strong> la fuente está detrás del sujeto y puede crear siluetas o bordes luminosos.</li></ul></div></details></div></section>
+
+<section class="section lesson" id="objetivos"><div class="container"><div class="head"><span class="eyebrow">07 · Elegir la perspectiva</span><h2>OBJETIVOS Y DISTANCIAS FOCALES</h2><p>El objetivo influye en el ángulo de visión y en cómo se representa la distancia entre los elementos. La distancia focal se expresa en milímetros (mm).</p></div>
+<div class="table-wrap"><table><tr><th>Tipo aproximado</th><th>Distancia focal</th><th>Uso frecuente</th></tr><tr><td>Ojo de pez</td><td>8–16 mm</td><td>Efectos muy amplios y distorsión característica.</td></tr><tr><td>Ultra gran angular</td><td>14–24 mm</td><td>Arquitectura, interiores y paisajes.</td></tr><tr><td>Gran angular</td><td>24–35 mm</td><td>Escenas amplias y fotografía documental.</td></tr><tr><td>Estándar</td><td>35–70 mm</td><td>Uso cotidiano y escenas generales.</td></tr><tr><td>Teleobjetivo</td><td>70–200 mm</td><td>Retratos, eventos y sujetos alejados.</td></tr><tr><td>Superteleobjetivo</td><td>300 mm o más</td><td>Deportes, fauna y sujetos distantes.</td></tr></table></div>
+<details class="accordion"><summary>¿Qué objetivo se usa en cada género?</summary><div class="inside"><ul class="clean"><li><strong>Paisaje y naturaleza:</strong> 24 mm, 14–24 mm, 24–70 mm o teleobjetivos según la escena.</li><li><strong>Retrato:</strong> 50 mm, 85 mm o 135 mm son opciones habituales.</li><li><strong>Bodas y eventos:</strong> 24–70 mm, 50 mm, 70–200 mm y objetivos macro para detalles.</li><li><strong>Deportes:</strong> 70–200 mm o teleobjetivos más largos; un gran angular puede servir para escenas cercanas.</li><li><strong>Macro:</strong> objetivos de 40 mm, 60 mm, 105 mm o 200 mm diseñados para enfocar de cerca.</li></ul><p>Son ejemplos, no reglas obligatorias. La clasificación también cambia según el tamaño del sensor: un mismo objetivo puede ofrecer un ángulo de visión distinto en cámaras diferentes.</p></div></details></div></section>
+
+<section class="section lesson" id="controles"><div class="container"><div class="head"><span class="eyebrow">08 · Conocer el equipo</span><h2>CONTROLES DE LA CÁMARA</h2><p>Muchas cámaras incluyen botones que permiten enfocar, bloquear mediciones o acceder rápidamente a funciones.</p></div>
+<div class="lesson-grid"><div class="panel"><h3>AF-ON</h3><p>En cámaras que lo incluyen, permite activar el enfoque automático con un botón separado del disparador. Su función exacta depende de la configuración.</p></div><div class="panel"><h3>Selección del punto de enfoque</h3><p>Permite elegir la zona del encuadre donde la cámara debe priorizar el enfoque. Algunas cámaras usan un joystick o controles direccionales.</p></div><div class="panel"><h3>Fn</h3><p>El botón de función suele abrir un menú rápido o ejecutar una función asignada por el usuario.</p></div><div class="panel"><h3>AEL</h3><p>El bloqueo de exposición automática puede mantener una medición de luz mientras se recompone la imagen. Su comportamiento cambia según el modo y la cámara.</p></div></div>
+<div class="fact">Los botones C1, C2 y C3 suelen ser controles personalizables en algunos modelos. No todas las cámaras tienen los mismos botones ni funciones: consulta el manual de tu equipo.</div></div></section>
+
+<section class="section lesson" id="tecnicas"><div class="container"><div class="head"><span class="eyebrow">09 · Decisiones creativas</span><h2>TÉCNICAS FOTOGRÁFICAS</h2><p>Las técnicas permiten modificar la sensación de espacio, movimiento y atención dentro de una imagen.</p></div>
+<div class="lesson-grid"><div class="panel"><h3>Ángulo normal</h3><p>La cámara se sitúa aproximadamente a la altura del sujeto. Ofrece una perspectiva familiar y directa.</p></div><div class="panel"><h3>Picado</h3><p>La cámara apunta hacia abajo desde una posición más elevada. Puede mostrar mejor el espacio o hacer que el sujeto parezca más pequeño.</p></div><div class="panel"><h3>Contrapicado</h3><p>La cámara apunta hacia arriba desde una posición baja. Puede dar sensación de altura o imponencia.</p></div><div class="panel"><h3>Movimiento</h3><p>Una velocidad rápida puede congelar la acción; una lenta puede registrar el movimiento. El barrido consiste en acompañar al sujeto con la cámara.</p></div></div>
+<details class="accordion"><summary>Cómo conseguir un fondo desenfocado</summary><div class="inside"><p>Para reducir la profundidad de campo, puedes usar una abertura amplia (número f pequeño), acercarte al sujeto, aumentar la distancia entre el sujeto y el fondo o utilizar una distancia focal mayor. El resultado depende de la combinación de estos factores y del tamaño del sensor.</p><p><strong>Desenfoque y bokeh no son exactamente lo mismo:</strong> el desenfoque describe las zonas fuera de foco; el bokeh se refiere a la apariencia estética de esas zonas, especialmente de los puntos luminosos desenfocados.</p></div></details>
+<details class="accordion"><summary>Enfoque y nitidez</summary><div class="inside"><p>Enfocar significa ajustar la cámara para que una zona concreta se vea definida. Puedes usar enfoque automático o manual. Comprueba que el punto de enfoque esté sobre el elemento que deseas destacar.</p></div></details></div></section>
+
+<section class="section lesson" id="formatos"><div class="container"><div class="head"><span class="eyebrow">10 · Archivos y ajustes</span><h2>FORMATOS Y EDICIÓN DIGITAL</h2><p>El formato determina cómo se guarda la información y qué posibilidades de edición ofrece.</p></div>
+<div class="table-wrap"><table><tr><th>Formato</th><th>Características</th><th>Uso común</th></tr><tr><td>RAW</td><td>Conserva gran cantidad de datos capturados; requiere revelado digital.</td><td>Edición flexible.</td></tr><tr><td>JPEG / JPG</td><td>Formato comprimido con pérdida; práctico y compatible.</td><td>Compartir y publicar.</td></tr><tr><td>PNG</td><td>Compresión sin pérdida y soporte de transparencia.</td><td>Gráficos y elementos digitales.</td></tr><tr><td>TIFF</td><td>Puede guardar imágenes con alta calidad; la compresión depende de la configuración.</td><td>Impresión y edición.</td></tr><tr><td>PSD</td><td>Archivo de trabajo de Photoshop que puede conservar capas.</td><td>Edición por capas.</td></tr><tr><td>DNG</td><td>Formato de negativo digital desarrollado por Adobe para archivos RAW.</td><td>Flujo de trabajo RAW.</td></tr></table></div>
+<details class="accordion"><summary>Ajustes básicos de edición</summary><div class="inside"><ul class="clean"><li><strong>Exposición:</strong> aclara u oscurece la imagen.</li><li><strong>Contraste:</strong> modifica la diferencia entre luces y sombras.</li><li><strong>Temperatura:</strong> ajusta la sensación cálida o fría del color.</li><li><strong>Saturación:</strong> cambia la intensidad de los colores.</li><li><strong>Recorte:</strong> modifica los límites y la composición.</li><li><strong>Nitidez:</strong> aumenta la percepción de detalle; un exceso puede crear artefactos.</li></ul><p>La edición debe apoyar la intención de la fotografía. No siempre es necesario aplicar muchos ajustes.</p></div></details></div></section>
+
+<section class="section lesson" id="proceso"><div class="container"><div class="head"><span class="eyebrow">11 · De la mirada al resultado</span><h2>EL PROCESO CREATIVO</h2><p>El clic no es el final. Una fotografía suele ser el resultado de varias decisiones antes, durante y después de capturarla.</p></div>
+<div class="steps"><div class="step"><b>01</b><h3>Observar</h3><p>Identifica la luz, colores, formas, fondo y momento.</p></div><div class="step"><b>02</b><h3>Interpretar</h3><p>Decide qué quieres comunicar y qué debe tener protagonismo.</p></div><div class="step"><b>03</b><h3>Organizar</h3><p>Elige encuadre, ángulo, distancia y relación entre planos.</p></div><div class="step"><b>04</b><h3>Preparar</h3><p>Ajusta exposición, enfoque y estabilidad.</p></div><div class="step"><b>05</b><h3>Capturar</h3><p>Espera el momento adecuado y fotografía con intención.</p></div><div class="step"><b>06</b><h3>Seleccionar y editar</h3><p>Revisa los resultados, elige las imágenes más sólidas y ajusta si es necesario.</p></div></div>
+<div class="fact"><strong>Cuatro decisiones antes de disparar:</strong> observa la luz, revisa el encuadre, piensa en el color y confirma el enfoque. La técnica ayuda, pero tu mirada da sentido a la imagen.</div>
+<details class="accordion"><summary>Ejercicio de observación sin cámara</summary><div class="inside"><p>Haz un recorrido de diez minutos sin tomar fotografías. Observa sombras, reflejos, colores, gestos y líneas. Imagina cómo encuadrarías una escena y después vuelve con la cámara para comprobar tu idea.</p></div></details></div></section>
+<section class="section alt-bg" id="practicar"><div class="container"><div class="head"><span class="eyebrow">12 · Lleva la teoría a la práctica</span><h2>DESAFÍOS FOTOGRÁFICOS</h2><p>La práctica permite comprender cómo cambian las imágenes cuando modificamos una decisión.</p></div>
+<div class="grid2"><article class="challenge"><h3>01 · Un lugar, dos perspectivas</h3><p>Fotografía el mismo espacio desde dos posiciones distintas. Compara cómo cambia la relación entre los elementos.</p></article><article class="challenge"><h3>02 · Cerca y lejos</h3><p>Realiza una toma general y otra cercana del mismo sujeto. Observa qué información aporta cada plano.</p></article><article class="challenge"><h3>03 · La luz como protagonista</h3><p>Busca una sombra, un reflejo o una luz lateral. Intenta que la iluminación sea parte de la composición.</p></article><article class="challenge"><h3>04 · Congelar o mostrar movimiento</h3><p>Compara una fotografía que congele una acción con otra que registre el movimiento. Analiza la diferencia.</p></article></div></div></section>
+
+<section class="section" id="quiz"><div class="container"><div class="head"><span class="eyebrow">13 · Comprueba lo aprendido</span><h2>QUIZ FOTOGRÁFICO</h2><p>Responde las preguntas y revisa cuánto recuerdas de los contenidos.</p></div>
+<div class="quizbox"><div id="status">Pregunta 1 de 5</div><div class="progress"><span id="bar"></span></div><h3 id="question">¿Qué controla principalmente la apertura?</h3><div class="options" id="options"></div><p id="feedback" aria-live="polite"></p><div class="actions"><button class="btn" id="next" disabled>Siguiente</button><button class="btn alt" id="restart" hidden>Volver a empezar</button></div></div></div></section>
+
+<!-- HISTORIA DE LA FOTOGRAFÍA -->
+
+<section class="history-section" id="historia">
+
+    <div class="container">
+
+        <div class="head">
+            <span class="eyebrow">13 · Evolución visual</span>
+
+            <h2>HISTORIA DE LA FOTOGRAFÍA</h2>
+
+            <p class="history-intro">
+                La fotografía es el resultado de siglos de experimentación
+                científica y artística. Desde los primeros métodos para
+                capturar imágenes hasta la tecnología digital actual,
+                su evolución ha transformado nuestra manera de observar,
+                comunicar y conservar recuerdos.
+            </p>
+        </div>
+
+        <div class="history-timeline">
+
+            <article class="history-item">
+                <div class="history-year">ANTIGÜEDAD</div>
+
+                <div class="history-card">
+                    <h3>LA CÁMARA OSCURA</h3>
+<img class="history-image" src="imagenes/Historia-1.jpg" alt="Cámara oscura histórica">
+                    <p>
+                        Desde hace muchos siglos se conocía el principio
+                        de la cámara oscura: la luz atraviesa un pequeño
+                        orificio y proyecta una imagen invertida del
+                        exterior sobre una superficie.
+                    </p>
+
+                    <p class="history-highlight">
+                        Fue uno de los antecedentes fundamentales
+                        de la fotografía.
+                    </p>
+                </div>
+            </article>
+
+            <article class="history-item">
+                <div class="history-year">1826–1827</div>
+
+                <div class="history-card">
+                    <h3>LAS PRIMERAS FOTOGRAFÍAS PERMANENTES</h3>
+<img class="history-image" src="imagenes/Historia-2.jpg" alt="Primera fotografía permanente de Niépce">
+                    <p>
+                        El inventor francés Joseph Nicéphore Niépce
+                        consiguió producir una imagen permanente
+                        mediante un proceso conocido como heliografía.
+                        Una de sus fotografías más conocidas muestra
+                        una vista desde una ventana de su propiedad.
+                    </p>
+
+                    <p class="history-highlight">
+                        La imagen necesitaba varias horas de exposición.
+                    </p>
+                </div>
+            </article>
+
+            <article class="history-item">
+                <div class="history-year">1839</div>
+
+                <div class="history-card">
+                    <h3>EL DAGUERROTIPO</h3>
+<img class="history-image" src="imagenes/Historia-3.jpg" alt="Cámara histórica de daguerrotipo">
+                    <p>
+                        Louis Daguerre presentó públicamente el
+                        daguerrotipo, un procedimiento fotográfico
+                        que permitía obtener imágenes detalladas
+                        sobre placas metálicas.
+                    </p>
+
+                    <p class="history-highlight">
+                        La fotografía comenzó a difundirse
+                        como una nueva forma de registrar la realidad.
+                    </p>
+                </div>
+            </article>
+
+            <article class="history-item">
+                <div class="history-year">1888</div>
+
+                <div class="history-card">
+                    <h3>LA FOTOGRAFÍA SE VUELVE MÁS ACCESIBLE</h3>
+    <img class="history-image" src="imagenes/Historia-4.jpg" alt="Cámara Kodak antigua">                
+
+                    <p>
+                        La empresa Kodak lanzó una cámara sencilla
+                        que utilizaba rollos fotográficos. Esto facilitó
+                        que más personas pudieran tomar fotografías
+                        sin necesitar conocimientos técnicos avanzados.
+                    </p>
+
+                    <p class="history-highlight">
+                        La fotografía comenzó a formar parte
+                        de la vida cotidiana.
+                    </p>
+                </div>
+            </article>
+
+            <article class="history-item">
+                <div class="history-year">1907</div>
+
+                <div class="history-card">
+                    <h3>LA LLEGADA DE LA FOTOGRAFÍA EN COLOR</h3>
+                    <img class="history-image" src="imagenes/Historia-5.jpg" alt="Fotografía histórica en color">
+
+                    <p>
+                        Los hermanos Auguste y Louis Lumière
+                        comercializaron el Autochrome, uno de los
+                        primeros procesos prácticos de fotografía
+                        en color.
+                    </p>
+
+                    <p class="history-highlight">
+                        Las imágenes comenzaron a representar
+                        el mundo con mayor riqueza cromática.
+                    </p>
+                </div>
+            </article>
+
+            <article class="history-item">
+                <div class="history-year">1975</div>
+
+                <div class="history-card">
+                    <h3>EL NACIMIENTO DE LA FOTOGRAFÍA DIGITAL</h3>
+                   <img class="history-image" src="imagenes/Historia-6.jpg" alt="Prototipo de cámara digital"> 
+
+                    <p>
+                        El ingeniero Steven Sasson, de Kodak,
+                        construyó un prototipo de cámara digital
+                        que registraba imágenes mediante un sensor
+                        electrónico.
+                    </p>
+
+                    <p class="history-highlight">
+                        Se abrió el camino hacia una nueva era
+                        de captura y almacenamiento de imágenes.
+                    </p>
+                </div>
+            </article>
+
+            <article class="history-item">
+                <div class="history-year">ACTUALIDAD</div>
+
+                <div class="history-card">
+                    <h3>LA FOTOGRAFÍA EN LA ERA DIGITAL</h3>
+      <img class="history-image" src="imagenes/Historia-7.jpg" alt="Fotografía digital moderna">              
+
+                    <p>
+                        Las cámaras digitales, los teléfonos
+                        inteligentes y los programas de edición
+                        permiten capturar, modificar y compartir
+                        imágenes en cuestión de segundos.
+                    </p>
+
+                    <p class="history-highlight">
+                        La fotografía se ha convertido en una
+                        herramienta cotidiana de comunicación,
+                        creatividad y expresión.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="history-conclusion">
+            <h3>UNA HISTORIA QUE SIGUE EN CONSTRUCCIÓN</h3>
+
+            <p>
+                La fotografía continúa evolucionando junto con
+                la tecnología y la sociedad. Sin embargo, su esencia
+                permanece: capturar momentos, transmitir emociones
+                y conservar fragmentos de nuestra historia.
+            </p>
+        </div>
+
+    </div>
+
 </section>
 
-<section class="intro" id="introduccion">
-  <div class="intro-grid">
-    <div>
-      <span class="tag">01 / Introducción</span>
-      <h2 class="section-title">¿QUÉ ES ENCUADRE CRUDO?</h2>
+<section class="genres-section" id="generos">
+  <div class="container">
 
-      <p class="section-text">
-        Encuadre Crudo es un proyecto educativo digital dedicado
-        a la enseñanza de los fundamentos de la fotografía.
-        Su propósito es ofrecer un espacio donde los estudiantes
-        puedan conocer conceptos, desarrollar su creatividad
-        y aprender a comunicar ideas mediante imágenes.
-      </p>
-
-      <p class="section-text">
-        A través de explicaciones, ejemplos visuales y actividades
-        prácticas, buscamos acercar la fotografía a la comunidad
-        educativa.
+    <div class="head">
+      <span class="eyebrow">14 · Exploración fotográfica</span>
+      <h2>GÉNEROS FOTOGRÁFICOS</h2>
+      <p class="genres-intro">
+        La fotografía permite representar el mundo desde diferentes perspectivas.
+        Cada género posee características propias y utiliza recursos visuales
+        para comunicar ideas, contar historias y transmitir emociones.
       </p>
     </div>
 
-    <img class="intro-image"
-      src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=1000"
-      alt="Cámara fotográfica">
-  </div>
-</section>
+    <div class="genres-grid">
 
-<section>
-  <span class="tag">02 / Importancia</span>
-  <h2 class="section-title">¿POR QUÉ APRENDER FOTOGRAFÍA?</h2>
+      <article class="genre-card">
+        <div class="genre-content">
+          <span class="genre-number">01</span>
+          <h3>FOTOGRAFÍA CALLEJERA</h3>
+  <img class="genre-image" src="imagenes/Genero-1.jpg" alt="Fotografía callejera">        
+          <p>
+            Captura escenas espontáneas de la vida cotidiana en espacios
+            públicos. Busca registrar momentos reales, situaciones
+            inesperadas y expresiones de la sociedad.
+          </p>
+          <p class="genre-purpose">
+            <strong>Su propósito:</strong> documentar la vida urbana
+            y sus historias.
+          </p>
+        </div>
+      </article>
 
-  <p class="section-text">
-    La fotografía no consiste únicamente en tomar imágenes.
-    También permite observar, interpretar y comunicar el mundo
-    que nos rodea.
-  </p>
+      <article class="genre-card">
+        <div class="genre-content">
+          <span class="genre-number">02</span>
+          <h3>FOTOGRAFÍA DE PAISAJE</h3>
+  <img class="genre-image" src="imagenes/Genero-2.jpg" alt="Fotografía de paisaje">        
+          <p>
+            Representa escenarios naturales o urbanos, como montañas,
+            playas, bosques y ciudades. Utiliza la luz y la composición
+            para destacar la belleza del entorno.
+          </p>
+          <p class="genre-purpose">
+            <strong>Su propósito:</strong> mostrar la relación entre
+            el espacio y la naturaleza.
+          </p>
+        </div>
+      </article>
 
-  <div class="card-grid">
-    <article class="card">
-      <h3>Expresión creativa</h3>
-      <p>Desarrolla la imaginación y permite transmitir emociones e ideas.</p>
-    </article>
+      <article class="genre-card">
+        <div class="genre-content">
+          <span class="genre-number">03</span>
+          <h3>FOTOGRAFÍA DE RETRATO</h3>
+   <img class="genre-image" src="imagenes/Genero-3.jpg" alt="Fotografía de retrato">       
+          <p>
+            Se centra en representar a una persona mediante su rostro,
+            postura y expresión. Puede transmitir emociones, personalidad
+            e identidad.
+          </p>
+          <p class="genre-purpose">
+            <strong>Su propósito:</strong> representar la esencia
+            de una persona.
+          </p>
+        </div>
+      </article>
 
-    <article class="card">
-      <h3>Observación del entorno</h3>
-      <p>Ayuda a descubrir detalles, formas, colores y perspectivas.</p>
-    </article>
+      <article class="genre-card">
+        <div class="genre-content">
+          <span class="genre-number">04</span>
+          <h3>FOTOGRAFÍA MACRO</h3>
+   <img class="genre-image" src="imagenes/Genero-4.jpg" alt="Fotografía macro">       
+          <p>
+            Permite observar objetos pequeños y detalles difíciles
+            de apreciar a simple vista, como insectos, flores y texturas.
+          </p>
+          <p class="genre-purpose">
+            <strong>Su propósito:</strong> revelar detalles
+            que normalmente pasan desapercibidos.
+          </p>
+        </div>
+      </article>
 
-    <article class="card">
-      <h3>Comunicación visual</h3>
-      <p>Facilita transmitir mensajes e información mediante imágenes.</p>
-    </article>
-  </div>
-</section>
+      <article class="genre-card">
+        <div class="genre-content">
+          <span class="genre-number">05</span>
+          <h3>FOTOGRAFÍA DOCUMENTAL</h3>
+   <img class="genre-image" src="imagenes/Genero-5.jpg" alt="Fotografía documental">       
+          <p>
+            Registra acontecimientos, comunidades y situaciones reales.
+            Busca informar y conservar testimonios visuales de diferentes
+            contextos sociales e históricos.
+          </p>
+          <p class="genre-purpose">
+            <strong>Su propósito:</strong> contar historias
+            y dejar un registro de la realidad.
+          </p>
+        </div>
+      </article>
 
-<!-- ÍNDICE EDUCATIVO -->
+      <article class="genre-card">
+        <div class="genre-content">
+          <span class="genre-number">06</span>
+          <h3>FOTOGRAFÍA ARTÍSTICA</h3>
+<img class="genre-image" src="imagenes/Genero-6.jpg" alt="Fotografía artística">          
+          <p>
+            Utiliza la cámara como medio de expresión creativa.
+            Puede combinar formas, colores, luces y elementos
+            para comunicar ideas o conceptos personales.
+          </p>
+          <p class="genre-purpose">
+            <strong>Su propósito:</strong> expresar una visión
+            personal mediante imágenes.
+          </p>
+        </div>
+      </article>
 
-<section class="topics">
-  <span class="tag">03 / Aprende fotografía</span>
-  <h2 class="section-title">EXPLORA LOS CONTENIDOS</h2>
-
-  <p class="section-text">
-    Recorre los temas principales y descubre cómo se construye
-    una fotografía.
-  </p>
-
-  <div class="card-grid">
-    <article class="topic-card">
-      <span class="number">01</span>
-      <h3>Fundamentos fotográficos</h3>
-      <p>ISO, apertura, velocidad y exposición.</p>
-      <a href="#fundamentos">ESTUDIAR →</a>
-    </article>
-
-    <article class="topic-card">
-      <span class="number">02</span>
-      <h3>Composición</h3>
-      <p>Reglas y recursos para organizar una imagen.</p>
-      <a href="#composicion">ESTUDIAR →</a>
-    </article>
-
-    <article class="topic-card">
-      <span class="number">03</span>
-      <h3>Iluminación</h3>
-      <p>Aprende a observar y utilizar la luz.</p>
-      <a href="#iluminacion">ESTUDIAR →</a>
-    </article>
-
-    <article class="topic-card">
-      <span class="number">04</span>
-      <h3>Técnicas fotográficas</h3>
-      <p>Planos, ángulos, enfoque y movimiento.</p>
-      <a href="#tecnicas">ESTUDIAR →</a>
-    </article>
-
-    <article class="topic-card">
-      <span class="number">05</span>
-      <h3>Edición fotográfica</h3>
-      <p>Ajustes básicos para mejorar una imagen.</p>
-      <a href="#edicion">ESTUDIAR →</a>
-    </article>
-
-    <article class="topic-card">
-      <span class="number">06</span>
-      <h3>Prácticas y galería</h3>
-      <p>Pon a prueba tus conocimientos.</p>
-      <a href="#practicar">PRACTICAR →</a>
-    </article>
-  </div>
-</section>
-
-<!-- FUNDAMENTOS -->
-
-<section class="lesson" id="fundamentos">
-  <span class="tag">04 / Lección uno</span>
-  <h2 class="section-title">FUNDAMENTOS FOTOGRÁFICOS</h2>
-
-  <p class="section-text">
-    Para comprender cómo funciona una cámara es necesario
-    conocer los elementos que controlan la exposición.
-    Tres de los más importantes son el ISO, la apertura
-    del diafragma y la velocidad de obturación.
-  </p>
-
-  <div class="lesson-grid">
-    <div>
-      <h3>01. ISO</h3>
-      <p>
-        El ISO representa el nivel de sensibilidad de la cámara
-        a la luz. En términos prácticos, aumentar el ISO permite
-        trabajar con menos luz, pero puede generar más ruido
-        o granulado en la imagen.
-      </p>
-      <ul>
-        <li>ISO bajo: imagen generalmente más limpia.</li>
-        <li>ISO alto: útil cuando hay poca luz.</li>
-        <li>El ISO debe ajustarse según las condiciones.</li>
-      </ul>
-      <div class="fact">
-        <strong>Ejemplo:</strong> En un día soleado puedes utilizar
-        un ISO bajo. En un lugar oscuro quizá necesites aumentarlo.
-      </div>
     </div>
 
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1000"
-      alt="Cámara fotográfica y controles">
-  </div>
-
-  <div class="lesson-grid" style="margin-top:45px">
-    <div>
-      <h3>02. Apertura del diafragma</h3>
+    <div class="genres-conclusion">
+      <h3>UNA CÁMARA, DIFERENTES FORMAS DE MIRAR</h3>
       <p>
-        Es el tamaño de la abertura del objetivo por donde
-        entra la luz. Se representa mediante números f,
-        como f/1.8, f/4 o f/11.
-      </p>
-      <ul>
-        <li>Número f pequeño: abertura grande y más luz.</li>
-        <li>Número f grande: abertura pequeña y menos luz.</li>
-        <li>También influye en la profundidad de campo.</li>
-      </ul>
-      <div class="fact">
-        Una abertura grande puede ayudar a destacar al sujeto
-        y desenfocar el fondo.
-      </div>
-    </div>
-
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?w=1000"
-      alt="Fotografía con profundidad de campo">
-  </div>
-
-  <div class="lesson-grid" style="margin-top:45px">
-    <div>
-      <h3>03. Velocidad de obturación</h3>
-      <p>
-        Es el tiempo durante el cual el sensor recibe luz.
-        Se expresa en segundos o fracciones de segundo.
-      </p>
-      <ul>
-        <li>Velocidad rápida: ayuda a congelar el movimiento.</li>
-        <li>Velocidad lenta: puede registrar movimiento.</li>
-        <li>Las velocidades lentas pueden producir desenfoque si la cámara se mueve.</li>
-      </ul>
-      <div class="fact">
-        Ejemplo: para fotografiar una persona corriendo,
-        una velocidad rápida puede ayudar a congelar su movimiento.
-      </div>
-    </div>
-
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=1000"
-      alt="Fotografía de movimiento">
-  </div>
-
-  <h3>04. El triángulo de exposición</h3>
-  <p class="section-text">
-    ISO, apertura y velocidad trabajan juntos para controlar
-    la exposición. Modificar uno de estos valores puede
-    requerir ajustar los otros para conservar el resultado deseado.
-  </p>
-
-  <div class="comparison">
-    <div>
-      <strong>Subexposición</strong>
-      La imagen recibe menos luz de la necesaria y puede
-      aparecer demasiado oscura.
-    </div>
-    <div>
-      <strong>Sobreexposición</strong>
-      La imagen recibe demasiada luz y algunas zonas
-      pueden perder detalles.
-    </div>
-  </div>
-</section>
-
-<!-- COMPOSICIÓN -->
-
-<section class="lesson" id="composicion">
-  <span class="tag">05 / Lección dos</span>
-  <h2 class="section-title">COMPOSICIÓN FOTOGRÁFICA</h2>
-
-  <p class="section-text">
-    La composición es la manera en que organizamos los
-    elementos dentro de una fotografía. Permite dirigir
-    la atención y comunicar una intención visual.
-  </p>
-
-  <div class="lesson-grid">
-    <div>
-      <h3>01. Regla de los tercios</h3>
-      <p>
-        Consiste en dividir mentalmente la imagen en nueve
-        partes iguales mediante dos líneas horizontales
-        y dos verticales.
-      </p>
-      <p>
-        Colocar elementos importantes cerca de las líneas
-        o sus intersecciones puede ayudar a conseguir
-        una composición equilibrada.
+        Conocer los géneros fotográficos permite descubrir nuevas
+        maneras de observar el entorno y elegir cómo queremos
+        representar aquello que vemos.
       </p>
     </div>
 
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000"
-      alt="Paisaje para estudiar composición">
   </div>
+</section>
+<section class="section lesson" id="galeria"><div class="container"><div class="head"><span class="eyebrow">14 · Memoria visual</span><h2>NUESTRA INSTITUCIÓN A TRAVÉS DEL LENTE</h2><p>Este espacio está destinado a mostrar la vida de nuestra institución mediante fotografías de sus espacios, actividades, encuentros deportivos y eventos culturales.</p></div>
 
-  <div class="lesson-grid" style="margin-top:40px">
-    <div>
-      <h3>02. Simetría</h3>
-      <p>
-        Se produce cuando los elementos de una imagen
-        presentan una distribución similar a ambos lados
-        de un eje. Puede transmitir equilibrio y orden.
+<div class="gallery">
+<figure><img src="imagenes/Músical-1.jpg" alt="Presentación musical 1"><figcaption>Talento musical · Presentaciones</figcaption></figure>
+<figure><img src="imagenes/Músical-2.jpg" alt="Presentación musical 2"><figcaption>Talento musical · Presentaciones</figcaption></figure>
+<figure><img src="imagenes/Músical-3.jpg" alt="Presentación musical 3"><figcaption>Talento musical · Presentaciones</figcaption></figure>
+<figure><img src="imagenes/Músical-4.jpg" alt="Presentación musical 4"><figcaption>Talento musical · Presentaciones</figcaption></figure>
+
+<figure><img src="imagenes/Deportes-1.jpg" alt="Actividad deportiva 1"><figcaption>Deporte · Comunidad educativa</figcaption></figure>
+<figure><img src="imagenes/Deportes-2.jpg" alt="Actividad deportiva 2"><figcaption>Deporte · Comunidad educativa</figcaption></figure>
+<figure><img src="imagenes/Deportes-3.jpg" alt="Actividad deportiva 3"><figcaption>Deporte · Comunidad educativa</figcaption></figure>
+
+<figure><img src="imagenes/Cultural-1.jpg" alt="Actividad cultural 1"><figcaption>Cultura · Identidad institucional</figcaption></figure>
+<figure><img src="imagenes/Cultural-2.jpg" alt="Actividad cultural 2"><figcaption>Cultura · Identidad institucional</figcaption></figure>
+<figure><img src="imagenes/Cultural-3.jpg" alt="Actividad cultural 3"><figcaption>Cultura · Identidad institucional</figcaption></figure>
+<figure><img src="imagenes/Cultural-4.jpg" alt="Actividad cultural 4"><figcaption>Cultura · Identidad institucional</figcaption></figure>
+
+<figure><img src="imagenes/Arte-1.jpg" alt="Exposición artística 1"><figcaption>Arte · Creatividad estudiantil</figcaption></figure>
+<figure><img src="imagenes/Arte-2.jpg" alt="Exposición artística 2"><figcaption>Arte · Creatividad estudiantil</figcaption></figure>
+<figure><img src="imagenes/Arte-3.jpg" alt="Exposición artística 3"><figcaption>Arte · Creatividad estudiantil</figcaption></figure>
+
+<figure><img src="imagenes/Acto-civico-1.jpg" alt="Acto cívico 1"><figcaption>Actos cívicos · Identidad institucional</figcaption></figure>
+<figure><img src="imagenes/Acto-civico-2.jpg" alt="Acto cívico 2"><figcaption>Actos cívicos · Identidad institucional</figcaption></figure>
+<figure>
+<img src="imagenes/Proyecto-1.jpg" alt="Proyecto estudiantil">
+<figcaption>Proyectos · Creatividad y aprendizaje</figcaption>
+</figure>
+
+<figure>
+<img src="imagenes/Docentes-1.jpg" alt="Personal docente">
+<figcaption>Comunidad docente · Educación</figcaption>
+</figure>
+
+<figure>
+<img src="imagenes/Arte-4.jpg" alt="Actividad artística">
+<figcaption>Arte · Expresión creativa</figcaption>
+</figure>
+
+<figure>
+<img src="imagenes/Arte-5.jpg" alt="Exposición artística">
+<figcaption>Arte · Talento estudiantil</figcaption>
+</figure>
+
+<figure>
+<img src="imagenes/Vida-estudiante-1.jpg" alt="Vida estudiantil">
+<figcaption>Vida estudiantil · Experiencias compartidas</figcaption>
+</figure>
+</div>
+<!-- NUESTRA IDENTIDAD -->
+<section class="identity-section" id="identidad">
+    <div class="container">
+
+        <div class="head">
+            <span class="eyebrow">15 · Nuestra esencia</span>
+            <h2>QUIÉNES SOMOS Y HACIA DÓNDE VAMOS</h2>
+            <p>Encuadre Crudo nace como una iniciativa educativa que busca acercar la fotografía a los estudiantes mediante el conocimiento, la creatividad y la tecnología.</p>
+        </div>
+
+        <div class="identity-grid">
+
+            <article class="identity-card">
+                <span>01 · PROPÓSITO</span>
+                <h3>NUESTRA MISIÓN</h3>
+                <p>
+                    Promover el aprendizaje y la exploración de la fotografía mediante un espacio digital educativo, creativo e interactivo que permita a los estudiantes desarrollar sus habilidades visuales, expresar sus ideas y descubrir el valor de la fotografía como medio de comunicación y expresión artística.
+                </p>
+            </article>
+
+            <article class="identity-card">
+                <span>02 · PROYECCIÓN</span>
+                <h3>NUESTRA VISIÓN</h3>
+                <p>
+                    Convertirse en un espacio digital de referencia para el aprendizaje fotográfico dentro de la comunidad educativa, fomentando la creatividad, la participación estudiantil y el interés por la fotografía como herramienta para documentar, preservar y compartir experiencias.
+                </p>
+            </article>
+
+        </div>
+    </div>
+    
+    
+<section class="participation-section" id="participacion">
+  <div class="container">
+
+    <div class="head">
+      <span class="eyebrow">Participación y comunidad</span>
+      <h2>PARTICIPACIÓN ESTUDIANTIL</h2>
+      <p class="participation-intro">
+        Encuadre Crudo busca convertirse en un espacio donde los
+        estudiantes puedan compartir su creatividad, desarrollar
+        habilidades fotográficas y contribuir a la memoria visual
+        de nuestra comunidad educativa.
       </p>
     </div>
 
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=1000"
-      alt="Arquitectura simétrica">
-  </div>
+    <div class="participation-grid">
 
-  <div class="lesson-grid" style="margin-top:40px">
-    <div>
-      <h3>03. Perspectiva</h3>
+      <article class="participation-card">
+        <span class="participation-number">01</span>
+        <h3>COMPARTE TUS FOTOGRAFÍAS</h3>
+        <p>
+          Los estudiantes pueden aportar fotografías de actividades,
+          eventos y experiencias escolares para enriquecer la galería
+          institucional.
+        </p>
+      </article>
+
+      <article class="participation-card">
+        <span class="participation-number">02</span>
+        <h3>DESARROLLA TU CREATIVIDAD</h3>
+        <p>
+          La fotografía permite experimentar con la luz, los colores,
+          los encuadres y las perspectivas para expresar ideas
+          de manera visual.
+        </p>
+      </article>
+
+      <article class="participation-card">
+        <span class="participation-number">03</span>
+        <h3>DOCUMENTA LA VIDA ESCOLAR</h3>
+        <p>
+          Cada imagen puede conservar momentos importantes de la
+          institución y convertirse en parte de su memoria visual.
+        </p>
+      </article>
+
+      <article class="participation-card">
+        <span class="participation-number">04</span>
+        <h3>PROPÓN NUEVAS IDEAS</h3>
+        <p>
+          Los estudiantes pueden sugerir temas, actividades y
+          propuestas para ampliar los contenidos y mejorar
+          continuamente este espacio digital.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="participation-message">
+      <h3>UNA COMUNIDAD, MUCHAS MIRADAS</h3>
       <p>
-        Es la forma en que se representan las relaciones
-        espaciales entre los objetos. Cambiar el punto
-        desde el que fotografiamos puede modificar
-        la percepción de profundidad y tamaño.
+        La participación de los estudiantes permite que Encuadre Crudo
+        crezca como un espacio de aprendizaje, expresión y colaboración.
+        Cada aporte puede convertirse en una nueva historia que merece
+        ser compartida.
       </p>
     </div>
 
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1000"
-      alt="Perspectiva urbana">
   </div>
+ <div class="participation-button-container">
+    <a 
+        href="https://forms.gle/w4cXuJU3ajeQcQc28"
+        class="participation-button"
+        target="_blank"
+        rel="noopener noreferrer">
+        <span>ENVIAR MI FOTOGRAFÍA</span>
+        <span class="button-arrow">↗</span>
+    </a>
+    <p>Comparte tu mirada y forma parte de nuestra memoria visual.</p>
+</div> 
+  
+</section>
 
-  <div class="lesson-grid" style="margin-top:40px">
-    <div>
-      <h3>04. Encuadre</h3>
-      <p>
-        Es la selección de lo que aparece dentro de los
-        límites de la fotografía. Un buen encuadre ayuda
-        a eliminar distracciones y destacar el tema principal.
-      </p>
+    
+   <!-- NUESTRO APORTE -->
+<section class="contribution-section" id="aporte">
+    <div class="container">
 
-      <h3>05. Planos fotográficos</h3>
-      <p>
-        Los planos determinan cuánto espacio del sujeto
-        aparece en la imagen.
-      </p>
-      <ul>
-        <li>Plano general: muestra al sujeto y su entorno.</li>
-        <li>Plano entero: presenta el cuerpo completo.</li>
-        <li>Plano medio: muestra aproximadamente de la cintura hacia arriba.</li>
-        <li>Primer plano: destaca el rostro o un detalle cercano.</li>
-      </ul>
+        <div class="head">
+            <span class="eyebrow">16 · Impacto educativo</span>
+            <h2>¿QUÉ APORTAMOS A NUESTRA INSTITUCIÓN?</h2>
+            <p>
+                Encuadre Crudo busca complementar la experiencia educativa mediante
+                recursos digitales que promueven el conocimiento, la creatividad
+                y la conservación de la memoria institucional.
+            </p>
+        </div>
+
+        <div class="contribution-grid">
+
+            <article class="contribution-item">
+                <h3>APRENDIZAJE DIGITAL</h3>
+                <p>Facilita el acceso a conocimientos y contenidos relacionados con la fotografía y las herramientas tecnológicas.</p>
+            </article>
+
+            <article class="contribution-item">
+                <h3>CREATIVIDAD</h3>
+                <p>Estimula la expresión artística y permite descubrir nuevas formas de comunicar ideas mediante imágenes.</p>
+            </article>
+
+            <article class="contribution-item">
+                <h3>MEMORIA INSTITUCIONAL</h3>
+                <p>Contribuye a conservar registros visuales de actividades, celebraciones y acontecimientos importantes.</p>
+            </article>
+
+            <article class="contribution-item">
+                <h3>IDENTIDAD EDUCATIVA</h3>
+                <p>Permite reconocer y valorar las experiencias, actividades y logros de nuestra comunidad educativa.</p>
+            </article>
+
+            <article class="contribution-item">
+                <h3>PARTICIPACIÓN</h3>
+                <p>Promueve el interés de los estudiantes por compartir sus experiencias y desarrollar proyectos creativos.</p>
+            </article>
+
+            <article class="contribution-item">
+                <h3>INNOVACIÓN</h3>
+                <p>Integra la tecnología en un espacio educativo que reúne información, fotografías y actividades de aprendizaje.</p>
+            </article>
+
+        </div>
+
+        <div class="contribution-quote">
+            "Una fotografía puede conservar un momento; una colección de fotografías puede contar la historia de toda una comunidad."
+        </div>
+
     </div>
-
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1000"
-      alt="Retrato fotográfico">
-  </div>
+</section>
+ 
 </section>
 
-
-<!-- ILUMINACIÓN -->
-
-<section class="lesson" id="iluminacion">
-  <span class="tag">06 / Lección tres</span>
-  <h2 class="section-title">ILUMINACIÓN FOTOGRÁFICA</h2>
-
-  <p class="section-text">
-    La luz es uno de los elementos esenciales de la fotografía.
-    Su intensidad, dirección, color y calidad influyen en
-    el aspecto y la atmósfera de una imagen.
-  </p>
-
-  <div class="card-grid">
-    <article class="card">
-      <h3>Luz natural</h3>
-      <p>
-        Proviene del sol. Puede cambiar durante el día
-        y producir diferentes sombras y tonalidades.
-      </p>
-    </article>
-
-    <article class="card">
-      <h3>Luz artificial</h3>
-      <p>
-        Se obtiene mediante lámparas, focos, flashes
-        y otras fuentes de iluminación.
-      </p>
-    </article>
-
-    <article class="card">
-      <h3>Dirección de la luz</h3>
-      <p>
-        Puede venir del frente, de un lateral o de detrás
-        del sujeto, creando diferentes efectos.
-      </p>
-    </article>
-  </div>
-
-  <div class="lesson-grid" style="margin-top:40px">
-    <div>
-      <h3>Luz suave y luz dura</h3>
-      <p>
-        La luz suave produce transiciones graduales entre
-        luces y sombras. La luz dura genera sombras más
-        definidas y contrastes marcados.
-      </p>
-      <div class="fact">
-        Consejo: observa cómo cambia el rostro de una persona
-        cuando la luz viene de frente o desde un costado.
-      </div>
-    </div>
-
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1000"
-      alt="Paisaje con iluminación natural">
-  </div>
 </section>
 
-<!-- TÉCNICAS -->
+<section class="section alt-bg" id="proyecto"><div class="container"><div class="head"><span class="eyebrow">15 · Información general</span><h2>SOBRE EL PROYECTO</h2><p>Encuadre Crudo nace como una propuesta de aprendizaje digital que organiza información fotográfica para facilitar su consulta y promover la práctica.</p></div>
+<div class="project-grid"><article class="project-card"><h3>Objetivo</h3><p>Desarrollar un recurso web educativo que reúna fundamentos y recomendaciones básicas de fotografía para estudiantes y personas interesadas en aprender.</p></article><article class="project-card"><h3>Propósito</h3><p>Facilitar el acceso a contenidos explicados de forma clara, acompañados de ejemplos visuales y actividades para poner en práctica lo aprendido.</p></article><article class="project-card"><h3>Justificación</h3><p>La fotografía forma parte de la comunicación visual cotidiana. Comprender sus principios técnicos y creativos ayuda a producir imágenes más intencionales e interpretar mejor las imágenes que consumimos.</p></article><article class="project-card"><h3>Recursos tecnológicos</h3><p>HTML estructura el contenido, CSS define su presentación y JavaScript incorpora interacciones como el cuestionario.</p></article></div></div></section>
 
-<section class="lesson" id="tecnicas">
-  <span class="tag">07 / Lección cuatro</span>
-  <h2 class="section-title">TÉCNICAS FOTOGRÁFICAS</h2>
-
-  <p class="section-text">
-    Las técnicas fotográficas permiten experimentar con
-    distintos puntos de vista y efectos para conseguir
-    imágenes con mayor intención visual.
-  </p>
-
-  <div class="card-grid">
-    <article class="card">
-      <h3>Ángulo normal</h3>
-      <p>La cámara se sitúa aproximadamente a la altura de los ojos del sujeto.</p>
-    </article>
-
-    <article class="card">
-      <h3>Ángulo picado</h3>
-      <p>La cámara apunta hacia abajo desde una posición elevada.</p>
-    </article>
-
-    <article class="card">
-      <h3>Ángulo contrapicado</h3>
-      <p>La cámara apunta hacia arriba desde una posición baja.</p>
-    </article>
-
-    <article class="card">
-      <h3>Profundidad de campo</h3>
-      <p>Es la zona de la imagen que aparece enfocada con suficiente nitidez.</p>
-    </article>
-
-    <article class="card">
-      <h3>Enfoque</h3>
-      <p>Permite destacar el elemento que queremos mostrar con mayor claridad.</p>
-    </article>
-
-    <article class="card">
-      <h3>Movimiento</h3>
-      <p>Podemos congelar la acción o mostrar su recorrido mediante el tiempo de exposición.</p>
-    </article>
-  </div>
-</section>
-
-<!-- EDICIÓN -->
-
-<section class="lesson" id="edicion">
-  <span class="tag">08 / Lección cinco</span>
-  <h2 class="section-title">EDICIÓN FOTOGRÁFICA</h2>
-
-  <p class="section-text">
-    La edición permite realizar ajustes sobre una fotografía
-    para mejorar su presentación y reforzar la intención
-    visual del autor.
-  </p>
-
-  <div class="lesson-grid">
-    <div>
-      <h3>Ajustes básicos</h3>
-      <ul>
-        <li>Exposición: modifica la luminosidad general.</li>
-        <li>Contraste: aumenta o reduce la diferencia entre luces y sombras.</li>
-        <li>Temperatura: modifica la sensación cálida o fría de los colores.</li>
-        <li>Saturación: cambia la intensidad de los colores.</li>
-        <li>Recorte: permite modificar los límites de la imagen.</li>
-        <li>Nitidez: mejora la percepción de los detalles.</li>
-      </ul>
-
-      <div class="fact">
-        La edición debe respetar la intención de la fotografía.
-        No siempre es necesario aplicar muchos efectos.
-      </div>
-    </div>
-
-    <img class="lesson-image"
-      src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1000"
-      alt="Proceso creativo y edición">
-  </div>
-</section>
-
-<!-- PRÁCTICAS -->
-
-<section class="challenges" id="practicar">
-  <span class="tag">09 / Actividades</span>
-  <h2 class="section-title">PON EN PRÁCTICA LO APRENDIDO</h2>
-
-  <p class="section-text">
-    La mejor manera de aprender fotografía es experimentar.
-    Realiza estos retos utilizando una cámara o un teléfono.
-  </p>
-
-  <div class="card-grid">
-
-    <article class="challenge-card">
-      <span class="number">01</span>
-      <h3>El reto de los tercios</h3>
-      <p>
-        Fotografía un objeto y colócalo cerca de una de las
-        intersecciones imaginarias de la regla de los tercios.
-      </p>
-    </article>
-
-    <article class="challenge-card">
-      <span class="number">02</span>
-      <h3>La luz natural</h3>
-      <p>
-        Fotografía el mismo objeto con luz frontal y lateral.
-        Observa cómo cambian las sombras.
-      </p>
-    </article>
-
-    <article class="challenge-card">
-      <span class="number">03</span>
-      <h3>Un ángulo diferente</h3>
-      <p>
-        Fotografía un objeto desde un ángulo bajo y otro alto.
-        Compara los resultados.
-      </p>
-    </article>
-
-    <article class="challenge-card">
-      <span class="number">04</span>
-      <h3>Una historia en tres fotos</h3>
-      <p>
-        Cuenta una pequeña historia mediante tres fotografías
-        que tengan relación entre sí.
-      </p>
-    </article>
-
-  </div>
-</section>
-
-<!-- CUESTIONARIO -->
-
-<section class="quiz">
-  <span class="tag">10 / Comprueba tus conocimientos</span>
-  <h2 class="section-title">¿CUÁNTO HAS APRENDIDO?</h2>
-
-  <div class="quiz-box">
-    <h3 id="question">¿Qué controla principalmente la apertura del diafragma?</h3>
-
-    <div id="options">
-      <button class="quiz-option" onclick="answer(0)">La cantidad de luz que entra por el objetivo.</button>
-      <button class="quiz-option" onclick="answer(1)">El color de la fotografía.</button>
-      <button class="quiz-option" onclick="answer(2)">El tamaño de la pantalla.</button>
-    </div>
-
-    <p id="quiz-result" aria-live="polite"></p>
-    <button class="btn" id="next-question" onclick="nextQuestion()" style="display:none">
-      Siguiente pregunta
-    </button>
-  </div>
-</section>
-
-<!-- GALERÍA -->
-
-<section id="galeria">
-  <span class="tag">11 / Inspiración visual</span>
-  <h2 class="section-title">GALERÍA FOTOGRÁFICA</h2>
-
-  <p class="section-text">
-    Una selección de imágenes de referencia para observar
-    diferentes formas de utilizar la luz, la composición
-    y la perspectiva.
-  </p>
-
-  <div class="gallery-grid">
-    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
-      alt="Paisaje de montaña">
-
-    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
-      alt="Paisaje natural">
-
-    <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=800"
-      alt="Arquitectura">
-
-    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800"
-      alt="Retrato">
-
-    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
-      alt="Luz del amanecer">
-
-    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800"
-      alt="Ciudad">
-  </div>
-</section>
-
-<!-- PROYECTO -->
-
-<section class="project" id="proyecto">
-  <span class="tag">12 / Nuestra propuesta</span>
-  <h2 class="section-title">SOBRE EL PROYECTO</h2>
-
-  <div class="project-grid">
-
-    <article class="project-card">
-      <h3>Objetivo general</h3>
-      <p>
-        Desarrollar un sitio web educativo que facilite
-        el aprendizaje de los fundamentos de la fotografía
-        mediante contenidos digitales y recursos visuales.
-      </p>
-    </article>
-
-    <article class="project-card">
-      <h3>Propósito</h3>
-      <p>
-        Promover el interés por la fotografía y proporcionar
-        herramientas básicas para desarrollar capacidades
-        creativas y visuales.
-      </p>
-    </article>
-
-    <article class="project-card">
-      <h3>Justificación</h3>
-      <p>
-        La fotografía es una herramienta de expresión
-        y comunicación. Un recurso digital puede facilitar
-        el acceso a conceptos y actividades para aprenderla.
-      </p>
-    </article>
-
-    <article class="project-card">
-      <h3>Recursos tecnológicos</h3>
-      <p>
-        El sitio utiliza HTML para organizar su contenido,
-        CSS para su presentación visual y JavaScript
-        para incorporar funciones interactivas.
-      </p>
-    </article>
-
-  </div>
-</section>
-
-<!-- COMUNIDAD EDUCATIVA -->
-
-<section class="institution">
-  <span class="tag">13 / Comunidad educativa</span>
-  <h2 class="section-title">APRENDER TAMBIÉN ES OBSERVAR</h2>
-
-  <p>
-    Encuadre Crudo busca aportar a la formación de la comunidad
-    educativa de la Unidad Educativa Salitre mediante recursos
-    digitales que promuevan la creatividad, las habilidades
-    tecnológicas y la comunicación visual. También propone
-    acercar la fotografía a la documentación de eventos,
-    actividades y proyectos escolares.
-  </p>
-</section>
+<section class="section"><div class="container"><div class="banner"><span class="eyebrow">16 · Proyección educativa</span><h2>UNA MIRADA QUE PUEDE COMPARTIRSE</h2><p style="max-width:720px">Un recurso digital como este puede apoyar el aprendizaje, estimular la creatividad y contribuir a documentar actividades escolares. También puede abrir oportunidades para que la comunidad educativa participe en la construcción de una memoria visual de la institución.</p></div>
+<div class="lesson-grid"><div class="panel"><h3>Aprendizaje y habilidades digitales</h3><p>La consulta de contenidos y la práctica fotográfica pueden fortalecer la observación, la comunicación visual y el uso creativo de herramientas digitales.</p></div><div class="panel"><h3>Memoria institucional</h3><p>Una galería organizada puede ayudar a conservar registros de eventos deportivos, culturales, académicos y de la vida cotidiana del centro educativo.</p></div></div></div></section>
 
 </main>
 
-<footer>
-  <strong>ENCUADRE CRUDO</strong>
-  <p>Aprende a mirar, aprende a capturar.</p>
-  <p>Proyecto educativo digital · 2026</p>
-</footer>
-
+<footer class="footer"><div class="container footer-in"><div><div class="logo">ENCUADRE <span>CRUDO.</span></div><p class="muted">Aprende a mirar, aprende a capturar.</p></div><p class="muted">Proyecto educativo digital · 2026</p><a class="toplink" href="#inicio">VOLVER ARRIBA ↑</a></div></footer>
 <script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+function closeMenu(){nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 
-// MENÚ DE NAVEGACIÓN
-
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("active");
-}
-
-function closeMenu() {
-  document.getElementById("menu").classList.remove("active");
-}
-
-// CUESTIONARIO INTERACTIVO
-
-const questions = [
-  {
-    question: "¿Qué controla principalmente la apertura del diafragma?",
-    options: [
-      "La cantidad de luz que entra por el objetivo.",
-      "El color de la fotografía.",
-      "El tamaño de la pantalla."
-    ],
-    correct: 0,
-    explanation: "¡Correcto! La apertura regula la cantidad de luz y también influye en la profundidad de campo."
-  },
-  {
-    question: "¿Qué sucede normalmente al utilizar un ISO muy alto?",
-    options: [
-      "La imagen siempre queda más nítida.",
-      "Puede aumentar el ruido digital.",
-      "La fotografía se vuelve automáticamente más oscura."
-    ],
-    correct: 1,
-    explanation: "¡Exacto! Un ISO alto puede ayudar en lugares oscuros, pero también puede aumentar el ruido."
-  },
-  {
-    question: "¿Qué permite una velocidad de obturación rápida?",
-    options: [
-      "Congelar mejor el movimiento.",
-      "Cambiar el color del objeto.",
-      "Aumentar el tamaño de la fotografía."
-    ],
-    correct: 0,
-    explanation: "¡Muy bien! Una velocidad rápida reduce el tiempo de exposición y ayuda a congelar la acción."
-  },
-  {
-    question: "¿En qué consiste la regla de los tercios?",
-    options: [
-      "Dividir la fotografía en nueve partes iguales.",
-      "Tomar tres fotografías seguidas.",
-      "Utilizar siempre tres colores."
-    ],
-    correct: 0,
-    explanation: "¡Correcto! Se divide la imagen mediante dos líneas horizontales y dos verticales."
-  },
-  {
-    question: "¿Qué es la composición fotográfica?",
-    options: [
-      "La marca de una cámara.",
-      "La organización de los elementos dentro de una imagen.",
-      "El proceso de cargar una batería."
-    ],
-    correct: 1,
-    explanation: "¡Excelente! La composición organiza los elementos para dirigir la atención y comunicar una intención."
-  }
+const questions=[
+{q:'¿Qué controla principalmente la apertura del diafragma?',o:['El tamaño de la abertura por donde entra la luz','El tiempo que permanece abierto el obturador','La distancia entre la cámara y el sujeto'],a:0,e:'La apertura regula el tamaño de la abertura del objetivo y también influye en la profundidad de campo.'},
+{q:'¿Qué suele ocurrir al utilizar una velocidad de obturación rápida?',o:['Aumenta siempre el ruido','Puede congelar el movimiento','El fondo siempre queda desenfocado'],a:1,e:'Una velocidad rápida reduce el tiempo de captura y puede congelar acciones.'},
+{q:'¿Qué efecto puede producir un ISO muy elevado?',o:['Más ruido digital','Menos luz en todos los casos','Mayor distancia focal'],a:0,e:'Al elevar el ISO puede aumentar el ruido visible en la imagen.'},
+{q:'¿Qué caracteriza a la luz lateral?',o:['Ilumina únicamente desde detrás','Puede resaltar texturas y volumen','Elimina todas las sombras'],a:1,e:'La luz lateral marca diferencias entre zonas iluminadas y sombras.'},
+{q:'¿Qué significa componer una fotografía?',o:['Elegir y organizar los elementos del encuadre','Aumentar siempre la saturación','Guardar la imagen en formato PNG'],a:0,e:'La composición organiza los elementos para dirigir la atención y comunicar una intención.'}
 ];
-
-let currentQuestion = 0;
-let score = 0;
-let answered = false;
-
-function showQuestion() {
-  const q = questions[currentQuestion];
-
-  document.getElementById("question").textContent = q.question;
-
-  const options = document.getElementById("options");
-  options.innerHTML = "";
-
-  q.options.forEach((option, index) => {
-    const button = document.createElement("button");
-    button.className = "quiz-option";
-    button.textContent = option;
-    button.onclick = () => answer(index);
-    options.appendChild(button);
-  });
-
-  document.getElementById("quiz-result").textContent = "";
-  document.getElementById("next-question").style.display = "none";
-  answered = false;
-}
-
-function answer(selected) {
-  if (answered) return;
-
-  answered = true;
-  const q = questions[currentQuestion];
-
-  if (selected === q.correct) {
-    score++;
-    document.getElementById("quiz-result").textContent =
-      "¡Respuesta correcta! " + q.explanation;
-  } else {
-    document.getElementById("quiz-result").textContent =
-      "No exactamente. " + q.explanation;
-  }
-
-  document.getElementById("next-question").style.display = "inline-block";
-
-  if (currentQuestion === questions.length - 1) {
-    document.getElementById("next-question").textContent = "Ver resultado";
-  }
-}
-
-function nextQuestion() {
-  if (currentQuestion < questions.length - 1) {
-    currentQuestion++;
-    showQuestion();
-  } else {
-    document.getElementById("question").textContent =
-      "¡Has terminado el cuestionario!";
-
-    document.getElementById("options").innerHTML = "";
-
-    document.getElementById("quiz-result").textContent =
-      "Tu puntuación fue " + score + " de " + questions.length +
-      ". Sigue practicando y aprendiendo fotografía.";
-
-    document.getElementById("next-question").style.display = "none";
-  }
-}
-
-showQuestion();
-
+let index=0,score=0,answered=false;
+const qEl=document.getElementById('question'),opts=document.getElementById('options'),feed=document.getElementById('feedback'),status=document.getElementById('status'),bar=document.getElementById('bar'),next=document.getElementById('next'),restart=document.getElementById('restart');
+function render(){answered=false;const item=questions[index];status.textContent=`Pregunta ${index+1} de ${questions.length}`;bar.style.width=`${index/questions.length*100}%`;qEl.textContent=item.q;feed.textContent='';opts.innerHTML='';next.disabled=true;next.hidden=false;next.textContent=index===questions.length-1?'Ver resultado':'Siguiente';restart.hidden=true;item.o.forEach((label,i)=>{const b=document.createElement('button');b.className='option';b.type='button';b.textContent=label;b.addEventListener('click',()=>choose(i));opts.appendChild(b);});}
+function choose(choice){if(answered)return;answered=true;const item=questions[index];[...opts.children].forEach((b,i)=>{b.disabled=true;if(i===item.a)b.classList.add('good');if(i===choice&&i!==item.a)b.classList.add('bad');});if(choice===item.a){score++;feed.textContent='¡Correcto! '+item.e;}else{feed.textContent='No exactamente. '+item.e;}next.disabled=false;}
+function finish(){bar.style.width='100%';status.textContent='Cuestionario finalizado';qEl.textContent=`Obtuviste ${score} de ${questions.length} respuestas correctas.`;opts.innerHTML='';feed.textContent=score===questions.length?'¡Excelente! Dominas estos conceptos básicos.':'Puedes repasar los temas y volver a intentarlo. La práctica ayuda a aprender.';next.hidden=true;restart.hidden=false;}
+next.addEventListener('click',()=>{if(!answered)return;if(index<questions.length-1){index++;render();}else finish();});
+restart.addEventListener('click',()=>{index=0;score=0;render();});
+render();
 </script>
-
 </body>
 </html>
